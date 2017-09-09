@@ -1,0 +1,35 @@
+ul.page-numbers li {
+    display: inline-block;
+}
+
+span.page-numbers,
+a.page-numbers {
+    display: block;
+    background: #fff;
+    line-height: 1;
+    text-align: center;
+    padding: 1rem;
+    border: 0;
+}
+
+span.page-numbers.current,
+a.page-numbers:hover {
+    background: $brand;
+    color: #fff;
+}
+
+
+.pagination {
+    overflow: visible;
+    clear: both;
+}
+
+.pagination .previous,
+.pagination-older {
+    float: left;
+}
+
+.pagination .next,
+.pagination-newer {
+    float: right;
+}

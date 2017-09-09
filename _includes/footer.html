@@ -1,0 +1,27 @@
+    <footer class="footer">
+        <div class="row">
+            <div class="column one-third">
+                <h5 class="label" style="margin-bottom: .5rem;">Follow</h5>
+                <ul class="menu-social">
+                    <li><a target="_blank" href="https://github.com/jjgrainger/ohthatsnice"><span class="fa fa-github"></span></a></li>
+                    <li><a target="_blank" href="https://twitter.com/OhThatsNice_"><span class="fa fa-twitter"></span></a></li>
+                    <li><a target="_blank" href="http://feeds.feedburner.com/OhThatsNiceWeb"><span class="fa fa-rss"></span></a></li>
+                </ul>
+            </div>
+            <div class="column two-thirds">
+                <h5 class="label" style="margin-bottom: .5rem;">Categories</h5>
+
+                {% for category in site.categories %}
+                    <a class="tag" href="/category/{{ category | first | slugify }}">{{ category | first }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </footer>
+    <div class="subfooter">
+        <p class="center">
+            Made with <span class="fa fa-heart red"></span> by
+            <a href="https://twitter.com/jjgrainger" target="_blank">@jjgrainger</a>
+        </p>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ "/assets/js/app.js" | prepend: site.url }}"></script>

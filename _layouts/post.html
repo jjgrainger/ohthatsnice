@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<div class="row">
+
+    <div class="column two-thirds m-one-whole">
+        <div class="website-preview">
+            <a href="{{ page.website }}">
+                <img src="https://shots.ohthatsnice.net/{{ page.image }}" alt="{{ page.title }}">
+            </a>
+        </div>
+    </div>
+
+    <div class="column one-third m-one-whole">
+        <h1 class="website-title">{{ page.title }}</h1>
+        <p class="website-url">
+            <a href="{{ page.website }}" target="_blank">
+                <!-- <span class="fa fa-share"></span> -->
+                {{ page.website }}
+            </a>
+        </p>
+
+        <p class="website-meta">
+            Added {{ page.date | date: '%B %d, %Y' }}
+        </p>
+
+        <p class="website-meta">
+            <a href="#" class="js-like btn-like gamma" data-post="#">
+                <span class="fa fa-heart"></span>
+                <span class="likes-count">0</span>
+            </a>
+        </p>
+
+        <div class="website-description">
+            {{ content }}
+        </div>
+
+        <div class="website-categories">
+            <div class="label">Categories</div>
+            {% for category in page.categories %}
+                <a class="tag" href="/category/{{ category | slugify }}">{{ category }}</a>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</div>
+
+<div class="website-pagination">
+    <div class="row">
+        <div class="column one-half">
+            <span class="prev">
+                &nbsp;
+                {% if page.previous %}
+                    <span class="label">Previous</span>
+                    <a rel="next" href="{{ site.baseurl }}{{ page.previous.url }}">
+                        {{page.previous.title}}
+                    </a>
+                {% endif %}
+            </span>
+        </div>
+        <div class="column one-half">
+            <span class="next">
+                &nbsp;
+                {% if page.next %}
+                    <span class="label">Next</span>
+                    <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}">
+                        {{page.next.title}}
+                    </a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+</div>
+
+<section class="container">
+    <div class="row">
+        <div class="column one-whole">
+            <h4 class="title center">Other Websites</h4>
+        </div>
+
+        {% for post in site.related_posts limit:6 %}
+            <div class="column one-half m-one-whole">
+                {% include website.html %}
+            </div>
+        {% endfor %}
+    </div>
+</section>

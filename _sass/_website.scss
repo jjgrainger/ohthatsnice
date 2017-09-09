@@ -1,0 +1,130 @@
+.website {
+    background: #fff;
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all ease .3s;
+}
+
+.website:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.website-preview img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.website-content {
+    padding: 1.5rem .75rem;
+}
+
+
+.website-actions {
+    list-style-type: none;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-top: 1px solid #f5f5f5;
+}
+
+.website-actions li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #f5f5f5;
+}
+
+.website-actions a {
+    display: block;
+    padding: .75rem;
+    border: 0;
+}
+
+.website-actions a:hover .fa {
+    color: $brand;
+}
+
+.website-actions .fa {
+    vertical-align: middle;
+    margin-right: .5rem;
+    transition: all ease .3s;
+    // display: block;
+    // margin-bottom: .5rem;
+}
+
+a.btn-like .fa,
+a.btn-like:hover {
+    color: #DE5049!important;
+    border-color: transparent;
+}
+
+.website-actions li:last-child {
+    border-right: none;
+}
+
+.website-actions a {
+    font-size: .875rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*
+ * Single
+ */
+
+.website-title {
+    margin-bottom: 0;
+}
+
+.website-single .website-preview {
+    background: #fff;
+    padding: .25rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.website-single-actions {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.website-single-actions li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.website-single-actions a {
+    font-size: 1.25rem;
+    border: 0;
+}
+
+.website-single-actions .fa {
+    display: block;
+}
+
+.website-pagination .column {
+    padding-bottom: 0;
+}
+
+.website-meta {
+    color: #777;
+    font-size: .875rem;
+}
+
+.tag {
+    display: inline-block;
+    font-size: .75rem;
+    background-color: #fff;
+    padding: .25rem .75rem;
+    border-radius: 3px;
+    border: 0;
+    margin: .1rem;
+}
+
+.tag:hover {
+    background-color: $brand;
+    color: #fff;
+}

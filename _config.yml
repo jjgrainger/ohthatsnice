@@ -1,0 +1,40 @@
+# Site settings
+title: Oh That's Nice
+description: A showcase of beautiful websites
+baseurl: ""
+url: "http://ohthatsnice.net"
+permalink: /websites/:title/
+
+sass:
+  style: compressed
+
+# Pagination settings
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: /page/:num
+  title: ':title'
+
+autopages:
+  enabled: true
+  categories:
+    enabled: true
+    layouts:
+    - archive.html
+    title: ':cat'
+    permalink: '/category/:cat'
+    sort_reverse: true
+  collections:
+    enabled: false
+  tags:
+    enabled: false
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-archives
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,21 @@
+---
+layout: default
+home: true
+pagination:
+    enabled: true
+    sort_reverse: true
+---
+
+<div class="row">
+    {% for post in paginator.posts %}
+        <div class="column one-half m-one-whole">
+            {% include website.html %}
+        </div>
+    {% endfor %}
+</div>
+
+<div class="row">
+    <div class="column one-whole">
+        {% include pagination.html %}
+    </div>
+</div>

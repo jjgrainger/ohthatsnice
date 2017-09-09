@@ -1,0 +1,162 @@
+/*
+Grid.css
+A responsive grid by jjgrainger
+http://jjgrainger.co.uk/grid
+ */
+
+.row,
+.column {
+  box-sizing: border-box;
+}// Grid
+
+.row {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.row .row {
+  margin: 0 -.75em -1.5em;
+}
+
+.column {
+  float: left;
+  padding: 0 .75em 1.5em;
+}
+
+
+
+/* whole */
+.column.one-whole {
+  width: 100%;
+}
+
+
+/* halves */
+.column.one-half {
+  width: 50%;
+}
+
+
+
+/* thirds */
+.column.one-third {
+  width: 33.333%;
+}
+
+.column.two-thirds {
+  width: 66.666%
+}
+
+
+
+/* fourths */
+.column.one-fourth {
+  width: 25%;
+}
+
+.column.three-fourths {
+  width: 75%;
+}
+
+
+
+/* fifths */
+.column.one-fifth {
+  width: 20%;
+}
+
+.column.two-fifths {
+  width: 40%;
+}
+
+.column.three-fifths {
+  width: 60%;
+}
+
+.column.four-fifths {
+  width: 80%;
+}
+
+
+
+/* sixths */
+.column.one-sixth {
+  width: 16.666666667%;
+}
+
+.column.five-sixths {
+  width: 83.333333335%;
+}
+
+
+
+/* twelfths */
+.column.one-twelfth {
+  width: 8.3333333%;
+}
+
+.column.five-twelfths {
+  width: 41.6666667%;
+}
+
+.column.seven-twelfths {
+  width: 58.3333333%;
+}
+
+.column.eleven-twelfths {
+  width: 91.666666667%;
+}
+
+
+
+/* push */
+.push-twelfth {
+  margin-left: 8.3333333%;
+}
+
+.push-sixth {
+  margin-left: 16.666666667%;
+}
+
+.push-third {
+  margin-left: 33.33333%;
+}
+
+.push-fourth {
+  margin-left: 25%;
+}
+
+
+/* float right */
+.flow-reverse {
+  float: right;
+}
+
+
+
+
+/*
+Cleafix
+Micro Clearfix by Nicolas Gallagher
+http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.cf {
+  overflow: visible!important;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: block;
+}
+.cf:after {
+  clear: both;
+}
+
+/*
+For IE 6/7 only
+Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}

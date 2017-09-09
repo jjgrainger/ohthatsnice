@@ -1,0 +1,28 @@
+    <header class="header">
+        <div class="row">
+            <div class="column one-third xs-one-whole">
+                <a href="{{ site.url }}" class="logo">
+                    <span class="fa fa-heart"></span>
+                    {{ site.title }}
+                </a>
+            </div>
+
+            <div class="column two-thirds xs-one-whole">
+                <ul class="nav menu-main">
+                    <li><a href="{{ site.url }}">All Sites</a></li>
+                    <li><a href="#categories" data-component="tab">Categories</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="subheader">
+        <div class="row">
+            <div class="column one-whole">
+                <div id="categories" class="tab center">
+                    {% for category in site.categories %}
+                        <a class="tag" href="/category/{{ category | first | slugify }}">{{ category | first }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
