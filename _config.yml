@@ -2,7 +2,7 @@
 title: Oh That's Nice
 description: A showcase of beautiful websites
 baseurl: ""
-url: "http://ohthatsnice.net"
+url: "https://ohthatsnice.net"
 permalink: /websites/:title/
 
 sass:
