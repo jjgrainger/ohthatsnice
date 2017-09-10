@@ -11,8 +11,9 @@ branches:
   only:
     - master
 deploy:
-  provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  provider: surge
+  project: ./_site/
+  domain: ohthatsnice.net
   on:
     branch: master
