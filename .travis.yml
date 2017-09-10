@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+  - 2.4.0
+  - 2.3.4
+cache: bundler
+install:
+  - bundle install
+script:
+  - bundle exec jekyll build
+branches:
+  only:
+    - master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  on:
+    branch: master
