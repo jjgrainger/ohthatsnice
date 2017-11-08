@@ -8,10 +8,59 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
-.website-preview img {
+.website-placeholder {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    padding-bottom: 66.6666667%;
+    border: 0;
+    text-align: center;
+}
+
+.website-placeholder .spinner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    margin: auto;
+    height: 2rem;
+    line-height: 1;
+    color: $brand;
+    font-size: 2rem;
+
+    animation: pulse .8s infinite;
+}
+
+.pulse {
+    animation-name: pulse;
+}
+
+@keyframes pulse {
+    from { transform: scale3d(1, 1, 1); }
+    50% { transform: scale3d(1.4, 1.4, 1.4); }
+    to { transform: scale3d(1, 1, 1); }
+}
+
+
+
+
+.website-placeholder img {
+    position: absolute;
+    z-index: 2;
     display: block;
     max-width: 100%;
     height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .3s;
+}
+
+.website-placeholder img.loaded {
+    opacity: 1;
+    visibility: visible;
 }
 
 .website-content {
