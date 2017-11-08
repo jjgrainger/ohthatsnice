@@ -6,8 +6,8 @@ layout: default
 
     <div class="column two-thirds m-one-whole">
         <div class="website-preview">
-            <a href="{{ page.website }}">
-                <img src="https://shots.ohthatsnice.net/{{ page.image }}" alt="{{ page.title }}">
+            <a href="{{ page.website }}" class="website-placeholder lazyload" title="{{ page.title }}" data-src="https://shots.ohthatsnice.net/{{ page.image }}">
+                <span class="spinner fa fa-heart"></span>
             </a>
         </div>
     </div>
