@@ -1,6 +1,6 @@
 <div class="website">
     <div class="website-preview">
-        <a href="{{ post.url }}" class="website-placeholder lazyload" title="{{ page.title }}" data-src="https://shots.ohthatsnice.net/{{ post.image }}">
+        <a href="{{ post.url }}" class="website-placeholder lazyload" title="{{ page.title }}" data-src="{{ post.image | prepend: site.cdn }}">
             <span class="spinner fa fa-heart"></span>
         </a>
     </div>

@@ -3,6 +3,7 @@ title: Oh That's Nice
 description: A showcase of beautiful websites
 baseurl: ""
 url: "https://ohthatsnice.net"
+cdn: "https://shots.ohthatsnice.net/"
 permalink: /websites/:title/
 
 sass:
