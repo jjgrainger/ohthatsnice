@@ -1,17 +1,33 @@
+{% assign social_title = site.title %}
+{% assign social_card = 'summary' %}
+{% assign social_image = '/assets/favicons/apple-touch-icon-180x180.png' | prepend: site.url %}
+
+{% if page.layout == 'post' %}
+    {% assign social_title = site.title | prepend: ' - ' | prepend: page.title %}
+    {% assign social_image = page.image | prepend: site.cdn %}
+    {% assign social_card = 'summary_large_image' %}
+{% endif %}
+
+{% if page.layout == 'archive' %}
+    {% assign category_title = page.title | escape | replace: '-', ' ' | capitalize %}
+    {% assign social_title = category_title | append: ' - ' | append: site.title %}
+{% endif %}
+
 <meta property="og:locale" content="en_GB"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="{{ page.title }} &ndash; Oh Thats Nice"/>
+<meta property="og:title" content="{{ social_title }}"/>
 <meta property="og:description" content="{{ site.description }}"/>
-<meta property="og:url" content="{{site.url}}{{ page.url }}"/>
+<meta property="og:url" content="{{ page.url | prepend: site.url }}"/>
 <meta property="og:site_name" content="Oh Thats Nice"/>
 <meta property="article:publisher" content="https://www.facebook.com/ohthatsnice/"/>
-<meta property="og:image" content="https://shots.ohthatsnice.net/{{ page.image }}"/>
+<meta property="og:image" content="{{ social_image }}"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="800"/>
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:description" content="{{ site.description }}"/>
-<meta name="twitter:title" content="{{ page.title }} &ndash; Oh Thats Nice"/>
+<meta name="twitter:card" content="{{ social_card }}"/>
 <meta name="twitter:site" content="@OhThatsNice_"/>
-<meta name="twitter:image" content="https://shots.ohthatsnice.net/{{ page.image }}"/>
 <meta name="twitter:creator" content="@OhThatsNice_"/>
+<meta name="twitter:title" content="{{ social_title }}"/>
+<meta name="twitter:description" content="{{ site.description }}"/>
+<meta name="twitter:image" content="{{ social_image }}"/>
+
