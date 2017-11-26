@@ -14,12 +14,11 @@
     </title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="//fonts.googleapis.com/css?family=Open+Sans:italic,400italic,600italic,300,400,600">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet"  href="//fonts.googleapis.com/css?family=Open+Sans:italic,400italic,600italic,300,400,600">
 
     {% include icons.html %}
 
