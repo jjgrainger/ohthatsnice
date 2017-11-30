@@ -1,4 +1,5 @@
 {
+    "total": {{ site.posts | size }},
     "data": [
         {% for post in site.posts %}
             {
