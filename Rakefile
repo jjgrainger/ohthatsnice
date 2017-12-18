@@ -49,5 +49,5 @@ end
 desc "Run the server"
 task :serve do
     # Run jekyll serve command
-    exec "bundle exec jekyll serve"
+    exec "bundle exec jekyll serve --future"
 end
