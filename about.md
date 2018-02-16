@@ -3,15 +3,13 @@ layout: page
 title: About
 ---
 
-# About
-
 [Oh Thats Nice]({{ site.url }}) is a showcase of beautiful websites. It's built and curated by [@jjgrainger](https://twitter.com/jjgrainger).
 
 Currently, there are [{{ site.posts | size }} websites]({{ site.url }}) featured in the gallery.
 
 #### Submit a Website
 
-See the [Submit a Website](#) guide if you would like to feature a website on Oh Thats Nice.
+See the [Submit a Website]({{ site.url}}/submit-a-website/) guide if you would like to feature a website on Oh Thats Nice.
 
 #### Follow
 
