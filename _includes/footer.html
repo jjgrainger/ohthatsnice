@@ -1,6 +1,12 @@
     <footer class="footer">
         <div class="row">
-            <div class="column one-third">
+            <div class="column one-third m-one-whole">
+                <h5 class="label" style="margin-bottom: .5rem;">Information</h5>
+                <ul class="menu-footer">
+                    <li><a href="{{ site.url }}">All Sites</a></li>
+                    <li><a href="{{ site.url }}/about/">About</a></li>
+                    <li><a href="{{ site.url }}/submit-a-website/">Submit a Website</a></li>
+                </ul>
                 <h5 class="label" style="margin-bottom: .5rem;">Follow</h5>
                 <ul class="menu-social">
                     <li><a target="_blank" href="https://github.com/jjgrainger/ohthatsnice"><span class="fa fa-github"></span></a></li>
@@ -8,7 +14,7 @@
                     <li><a target="_blank" href="http://feeds.feedburner.com/OhThatsNiceWeb"><span class="fa fa-rss"></span></a></li>
                 </ul>
             </div>
-            <div class="column two-thirds">
+            <div class="column two-thirds m-one-whole">
                 <h5 class="label" style="margin-bottom: .5rem;">Categories</h5>
 
                 {% for category in site.categories %}

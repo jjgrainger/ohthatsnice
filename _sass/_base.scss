@@ -161,6 +161,22 @@ h4 {
     margin-left: .75rem;
 }
 
+@media(max-width: 480px) {
+    .logo {
+        display: inline-block;
+        margin-bottom: .75rem;
+    }
+
+    .menu-main {
+        float: none;
+    }
+
+    .menu-main li {
+        margin-left: 0;
+        margin-right: .75rem;
+    }
+}
+
 .btn {
     background-color: #fff;
     padding: .75rem;
@@ -192,7 +208,7 @@ h4 {
     padding-bottom: 0;
 }
 
-.page-title {
+.archive-title {
     font-size: 1rem;
     margin-bottom: 0;
     color: #888;

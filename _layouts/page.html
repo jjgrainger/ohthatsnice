@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+        {% include header.html %}
+
+        <main id="content" class="container page">
+            <div class="row">
+                <div class="column two-thirds push-sixth m-one-whole">
+                    <h1 class="page-title">
+                        {{ page.title }}
+                    </h1>
+
+                    {{ content }}
+                </div>
+            </div>
+        </main>
+
+        {% include footer.html %}
+    </body>
+</html>
