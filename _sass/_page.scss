@@ -1,0 +1,20 @@
+.container.page {
+    margin: 0 auto 1.5rem;
+    width: 90%;
+    max-width: 740px;
+}
+
+.page ul {
+    padding-left: 3rem;
+    list-style-type: disc;
+    margin-bottom: 1.5rem;
+}
+
+.page a {
+    // border-color: $brand;
+    font-weight: 600;
+}
+
+.page h4 {
+    margin-top: 3rem;
+}
