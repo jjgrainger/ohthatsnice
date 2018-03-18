@@ -1,6 +1,10 @@
 # Oh That's Nice
 
+[![Build Status](https://travis-ci.org/jjgrainger/ohthatsnice.svg?branch=master)](https://travis-ci.org/jjgrainger/ohthatsnice)
+
 > [Oh Thats Nice](https://ohthatsnice.net) is a showcase of beautiful websites.
+
+## Overview
 
 Behind the scenes, this project is an opportunity to experiment with automated workflows particularly focusing on builds, deploys, screenshot and submission generation.
 
