@@ -25,4 +25,5 @@ Behind the scenes, this project is an opportunity to experiment with automated w
 * Screenshots created with [webshot](https://github.com/jjgrainger/webshot)
 * Screenshots hosted on [Amazon S3](https://aws.amazon.com/s3)
 
+If you have any questions please send us a direct message on twitter to [@OhThatsNice_](https://twitter.com/OhThatsNice_) and we'll get back to you as soon as possible.
 
