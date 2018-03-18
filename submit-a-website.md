@@ -9,7 +9,7 @@ If you would like to submit a site, you can do so through the following methods.
 
 #### Direct Message
 
-You can DM [@OhThatsNice_](https://twitter.com/OhThatsNice_) on Twitter with the name and link to the site you would like to add.
+You can DM [@OhThatsNice_](https://twitter.com/OhThatsNice_) on Twitter with the name and link to the site you would like to add. After, a maintainer will see to adding the site.
 
 #### Create an issue
 
@@ -34,3 +34,4 @@ Please note no screenshots are included in the repository so do not commit any i
 * Follow the prompts, you can modify the post after
 * [Create a pull request](https://github.com/jjgrainger/ohthatsnice/pulls)
 
+If you have any questions or need help, please send us a direct message on twitter to [@OhThatsNice_](https://twitter.com/OhThatsNice_) and we'll get back to you as soon as possible.
