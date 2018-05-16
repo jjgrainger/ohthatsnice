@@ -1,11 +1,19 @@
 .website {
     background: #fff;
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: all ease .3s;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
 }
 
-.website:hover {
+.website-preview {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.website-preview--single {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .website-placeholder {
@@ -44,9 +52,6 @@
     to { transform: scale3d(1, 1, 1); }
 }
 
-
-
-
 .website-placeholder img {
     position: absolute;
     z-index: 2;
@@ -66,7 +71,6 @@
 .website-content {
     padding: 1.5rem .75rem;
 }
-
 
 .website-actions {
     list-style-type: none;
