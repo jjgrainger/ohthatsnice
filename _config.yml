@@ -42,3 +42,5 @@ exclude:
   - README.md
   - vendor
   - Rakefile
+include:
+  - _redirects
