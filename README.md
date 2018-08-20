@@ -1,7 +1,5 @@
 # Oh That's Nice
 
-[![Build Status](https://travis-ci.org/jjgrainger/ohthatsnice.svg?branch=master)](https://travis-ci.org/jjgrainger/ohthatsnice)
-
 > [Oh Thats Nice](https://ohthatsnice.net) is a showcase of beautiful websites.
 
 ## Overview
@@ -44,8 +42,7 @@ Please note no screenshots are included in the repository so do not commit any i
 ## About the site
 
 * Built with [Jekyll](https://jekyllrb.com/)
-* Build and deploys managed by [Travis](https://travis-ci.org)
-* Hosted on [Surge](http://surge.sh/)
+* Hosted on [Netlify](https://netlify.com/)
 * Screenshots created with [webshot](https://github.com/jjgrainger/webshot)
 * Screenshots hosted on [Amazon S3](https://aws.amazon.com/s3)
 
