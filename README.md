@@ -1,7 +1,5 @@
 # Oh That's Nice
 
-[![Build Status](https://travis-ci.org/jjgrainger/ohthatsnice.svg?branch=master)](https://travis-ci.org/jjgrainger/ohthatsnice)
-
 > [Oh Thats Nice](https://ohthatsnice.net) is a showcase of beautiful websites.
 
 ## Overview
