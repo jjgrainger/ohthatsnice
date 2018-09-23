@@ -1,9 +1,18 @@
 .container.page {
-    // margin: 0 auto 1.5rem;
-    // width: 90%;
-    // max-width: 740px;
+    padding-top: 0;
 }
 
+.page-header {
+    background: $brand;
+    color: #fff;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.page-title {}
+
+// page content formatting
 .page ul {
     padding-left: 3rem;
     list-style-type: disc;
@@ -11,7 +20,6 @@
 }
 
 .page a {
-    // border-color: $brand;
     font-weight: 600;
 }
 
@@ -19,11 +27,61 @@
     margin-top: 3rem;
 }
 
-.page-title {}
 
 code {
     font-family: monospace;
     font-size: .875rem;
     color: #666;
-    // white-space: nowrap;
+}
+
+.small-print {
+    color: #666;
+    font-size: .75rem;
+    font-style: italic;
+}
+
+
+// form
+form {
+    font-size: .875rem;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .75rem;
+    font-weight: 600;
+}
+
+.field-website {
+    border: 1px solid #999;
+    font: inherit;
+    display: block;
+    padding: .375rem;
+    border-radius: 3px;
+    margin-bottom: .75rem;
+    width: 100%;
+}
+
+.field-submit {
+    display: inline-block;
+    border: 0;
+    background: $brand;
+    color: #fff;
+    padding: .75rem;
+    border-radius: 3px;
+    font: inherit;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid darken($brand, 10%);
+    transition: background ease .3s;
+
+    &:hover {
+        cursor: pointer;
+        background: lighten($brand, 3%);
+    }
+
+    &:active {
+        border-bottom: 0;
+        margin-top: 3px;
+    }
 }
